@@ -4,9 +4,7 @@
       <login-success :username="vuexUsername" @logout="logout" />
     </div>
     <div class="content">
-      <transition name="fade">
-        <router-view />
-      </transition>
+      <router-view />
     </div>
   </div>
 </template>
@@ -28,7 +26,7 @@ export default {
   },
   methods: {
     logout() {
-      this.$router.push('/login');
+      this.$router.push("/login");
       storage.removeStorage("loginStatus");
     }
   }
@@ -51,10 +49,4 @@ export default {
         min-height: 1000px
         padding: 25px
         background: #f0f0f0
-// .fade-enter-active, .fade-leave-active 
-//   transition: all .5s;
-
-// .fade-enter, .fade-leave-to 
-//   opacity: 0;
-
 </style>

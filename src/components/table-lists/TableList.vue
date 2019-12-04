@@ -2,7 +2,6 @@
   <div class="table-list">
     <div class="row">
       <div class="col-md-12">
-        <!-- tr 是一整行，th是行里面的东西 -->
         <table class="table table-striped table-bordered">
           <thead>
             <tr>

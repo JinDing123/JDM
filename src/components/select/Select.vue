@@ -2,7 +2,6 @@
   <div>
     <div v-if="notFirstAndSecondId">暂无分类</div>
     <div class="select-wrapper" v-else>
-      <!-- 你传id，我就能够获取到你对应的名字，牛逼 -->
       <select
         class="form-control cate-select"
         v-model="firstCategoryIdInfo"
@@ -92,7 +91,7 @@ export default {
     },
     firstCategoryId(newValue) {
       // 商品详情 || 商品编辑，会传入一个父级和子级id，根据它们的id，去选择它们对应的options, 商品添加的页面没有firstCategoryId传进来，所以不需要判断
-      console.log("55", newValue, this.secondCategoryId);
+      console.log("categoryId", newValue, this.secondCategoryId);
       if (newValue === 0 && this.secondCategoryId !== 0) {
         // 父级没有categoryId，子级有id，把子级的id给父级
         this.firstCategoryIdInfo = this.secondCategoryId;

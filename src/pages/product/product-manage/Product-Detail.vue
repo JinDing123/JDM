@@ -42,7 +42,7 @@
           v-if="productDetail.detail"
           v-html="productDetail.detail"
         ></div>
-        <div v-else class="pt7">暂无商品描述</div>
+        <div v-if="!productDetail.detail" class="pt7">暂无商品描述</div>
       </template>
     </product-input>
   </div>

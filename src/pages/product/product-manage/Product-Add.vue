@@ -3,7 +3,6 @@
     <tips :tipInfo="tipInfo" />
     <p class="title">商品管理 -- 添加商品</p>
     <product-input @handleSubmitToParent="handleAddProductSubmit">
-      <!-- 因为数据是在子组件的，所以它这里要想把子组件的数据传出来的话，肯定是要用子组件定义的事件的，这里拿到的是子组件自己的事件，然后触发这个事件，再向父组件抛出一个自定义事件，这样父组件就能够拿到子组件里面的数据了 -->
       <template #product-img>
         <div
           class="img-icon-wrapper"
@@ -98,7 +97,7 @@ export default {
       const productAddInfo = {
         categoryId: this.firstCategoryId,
         subImages: this.imgUris.join(","),
-        detail: e.editorValue,
+        detail: this.editorValue,
         price: e.price,
         stock: e.stock,
         name: e.name,

@@ -109,13 +109,9 @@
           <slot name="rich-edtior"/>
         </div>
       </div>
-      <!-- 如果slot便签上面定义了类名，插入的元素还会不会有这个类名 -->
-      <!-- 富文本编辑器上传图片失败的tip提示 -->
       <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
           <slot name="btn" :handleSubmit="handleSubmit" />
-          <!-- 外部传进来的btn，它触发的事件是这个组件的事件，而不是外部组件的事件，点击btn之后，它向外部组件传递一个自定义事件啊 -->
-          <!-- <button v-slot:btn>这样用吗</button>  -->
         </div>
       </div>
     </div>
@@ -123,14 +119,9 @@
 </template>
 
 <script>
-// 不用v-model, 用value绑定input，value的值外部传进来的,你传来的productPrice有值，我就显示，在商品详情里面会传价格进来，所以我就有显示，你添加商品没有传进来，所以我就没有值
-
-//  使用 oninput事件模仿v-model，值发生变化，修改productPriceHook值，然后把productPriceHook值传给父组件，这样就达到了不修改父组件传过来的数据了，但是还是能够把新的值传给父组件
 export default {
   name: "product-input",
   props: {
-    // 用于 修改页 || 详情页的时候，price都是有值的，所以这个必须是要接受值的
-    // 但是在添加页面，它又是没值的，并且它还要修改值
     productName: {
       type: String,
       default: ""

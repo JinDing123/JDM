@@ -49,7 +49,6 @@ module.exports = {
                 use: {
                     loader: 'file-loader',
                     options: {
-                        // 你原路径是什么，打包的地址就是什么，你原路径是在font/， 所以打包出来的也要到font/
                         outputPath: 'font/',
                     }
                 },

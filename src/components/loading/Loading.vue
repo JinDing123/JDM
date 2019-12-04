@@ -25,14 +25,6 @@
   </div>
 </template>
 
-<script>
-// export default {
-//     props: {
-//         isLoading: Boolean
-//     }
-// };
-</script>
-
 <style lang="stylus" scoped>
 .load8 {
   width: 20px;

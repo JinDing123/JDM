@@ -41,7 +41,7 @@ export default {
   name: "login",
   data() {
     return {
-      username: "admin",
+      username: "rosen",
       password: "admin",
       tipInfo: {}
     };

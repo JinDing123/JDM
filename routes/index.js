@@ -11,9 +11,6 @@ import http from 'util/http';
 const store = getStore();
 
 
-
-
-// 不能实时获取到 vuex的isLogin
 export default () => {
     const router = new VueRouter({
         mode: 'history',
@@ -39,7 +36,6 @@ export default () => {
             };
         } else {
             if (to.path === '/login') {
-                // 登录之后，通过url输入 /login, 提示用户不能重复登录，并且返回, 返回之前的url -1
                 alert('您已经登录了，请勿重复登录!');
                 next('/');
             };

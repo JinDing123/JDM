@@ -22,12 +22,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-// .container-fluid
-//   padding-left: 0px
 .wrapper
-  // padding-left: 0px !important
   display: flex
-  // position: relative
   .left-wrapper
     width: 260px
   .right-wrapper

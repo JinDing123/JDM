@@ -33,7 +33,6 @@ class ProductModel extends Http {
         })
     }
     handleAddOrEditProduct(e) {
-        console.log('product:', e);
         return this
             .request({
                 url: "/product/save.do",
@@ -63,15 +62,6 @@ class ProductModel extends Http {
         };
         return false; // 全都符合返回false
     }
-    setNewSubmitValue(origin, target) {
-        // for (let key of Object.keys(origin)) {
-        //     if (!origin[key]) {  // 问题就是 subImages 为空的，这里也符合条件，因为 !'' 和 !undefined 一样
-        //         origin[key] = target[key];
-        //     };
-        // };
-        // return origin;
-    }
-
 
 };
 

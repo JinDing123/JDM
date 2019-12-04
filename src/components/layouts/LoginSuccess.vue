@@ -24,7 +24,7 @@ export default {
       ...mapActions({actionLogin: 'login/loginSync'}), 
       logout() {
           this.actionLogin({});
-          this.$emit('logout');   // 传一个值出去不就行了，直接父组件把storeage的login干掉
+          this.$emit('logout');  
       }
   }
 };

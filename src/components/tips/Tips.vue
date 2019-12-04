@@ -7,12 +7,6 @@
 </template>
 
 <script>
-// 有信息的时候显示，传入一个持续显示的时间，时间到了自动关闭
-/*
-  @params:
-    msg -> string 提示内容
-    type => number 提示的类型(成功 || 失败)
-*/
 export default {
   props: {
     tipInfo: {
