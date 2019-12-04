@@ -84,7 +84,6 @@ export default {
           fullPath !== "/order" ? this.$router.push("/order") : null;
           break;
         case "user":
-          console.log(tag);
           fullPath !== "/user" ? this.$router.push("/user") : null;
           break;
       }

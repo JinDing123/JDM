@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p class="title">用户管理</p>
     <div class="user" v-if="!loading">
       <p class="title">用户管理</p>
       <table-list :tHeadLists="tHeadLists" :tBodyListsLen="tBodyLists.length">
