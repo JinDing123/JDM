@@ -1,7 +1,5 @@
-# 项目的原型是用react写的，本人用vue重写了一遍，加上了自己的逻辑。 
+项目的原型是用react写的，看到原网站觉得很好, 自己用自己搭建的简易vue脚手架，配合vue重写了一遍。 
 
-# JDM
+cd JDM/
 
-# cd JDM/
-
-# npm install || yarn
+npm install || yarn
